@@ -23,30 +23,30 @@ $sde_name = 'vanguard-1.0-114986';
 
 // Prepare the data that we want represented as JSON
 $data = [
-   'version' => $sde_name,
-   'url' => 'https://www.fuzzwork.co.uk/dump/:version/',
-   'format' => '.sql.bz2',
-   'tables' => [
-      'dgmTypeAttributes',
-      'invCategories',
-      'invContrabandTypes',
-      'invControlTowerResourcePurposes',
-      'invControlTowerResources',
-      'invFlags',
-      'invGroups',
-      'invItems',
-      'invMarketGroups',
-      'invMetaGroups',
-      'invMetaTypes',
-      'invNames',
-      'invPositions',
-      'invTypeMaterials',
-      'invTypeReactions',
-      'invTypes',
-      'invUniqueNames',
-      'mapDenormalize',
-      'staStations'
-   ]
+    'version' => $sde_name,
+    'url'     => 'https://www.fuzzwork.co.uk/dump/:version/',
+    'format'  => '.sql.bz2',
+    'tables'  => [
+        'dgmTypeAttributes',
+        'invCategories',
+        'invContrabandTypes',
+        'invControlTowerResourcePurposes',
+        'invControlTowerResources',
+        'invFlags',
+        'invGroups',
+        'invItems',
+        'invMarketGroups',
+        'invMetaGroups',
+        'invMetaTypes',
+        'invNames',
+        'invPositions',
+        'invTypeMaterials',
+        'invTypeReactions',
+        'invTypes',
+        'invUniqueNames',
+        'mapDenormalize',
+        'staStations'
+    ]
 ];
 
 $file = __DIR__ . '/../sde.json';
