@@ -1,3 +1,4 @@
+![SeAT](http://i.imgur.com/aPPOxSK.png)
 # resources
 
 ## This repository contains the SeAT Resources
