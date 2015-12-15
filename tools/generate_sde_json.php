@@ -45,6 +45,7 @@ $data = [
         'invTypes',
         'invUniqueNames',
         'mapDenormalize',
+        'ramActivities',
         'staStations'
     ]
 ];
@@ -52,4 +53,3 @@ $data = [
 $file = __DIR__ . '/../sde.json';
 $sde = json_encode($data) . PHP_EOL;
 file_put_contents($file, $sde, LOCK_EX);
-
