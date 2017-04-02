@@ -28,6 +28,7 @@ $data = [
     'format'  => '.sql.bz2',
     'tables'  => [
         'dgmTypeAttributes',
+        'dgmTypeEffects',
         'invCategories',
         'invContrabandTypes',
         'invControlTowerResourcePurposes',
