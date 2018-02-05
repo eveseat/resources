@@ -27,6 +27,7 @@ $data = [
     'url'     => 'https://www.fuzzwork.co.uk/dump/:version/',
     'format'  => '.sql.bz2',
     'tables'  => [
+        'chrFactions',
         'dgmTypeAttributes',
         'dgmTypeEffects',
         'invCategories',
