@@ -48,8 +48,8 @@ $data = [
         'invUniqueNames',
         'mapDenormalize',
         'ramActivities',
-        'staStations'
-    ]
+        'staStations',
+    ],
 ];
 
 $file = __DIR__ . '/../sde.json';
