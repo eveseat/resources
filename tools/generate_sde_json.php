@@ -19,7 +19,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-$sde_name = 'sde-20210713-TRANQUILITY';
+$sde_name = 'sde-20211013-TRANQUILITY';
 
 // Prepare the data that we want represented as JSON
 $data = [
