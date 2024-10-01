@@ -21,5 +21,5 @@ jobs:
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
           VERS=$(cat sde.json | grep -E -o "([0-9]{8}-TRANQUILITY)"  | uniq)
           git add sde.json ./tools/generate_sde_json.php
-          git commit -m "Update SDE to $VERS"
+          git diff --exit-code || git commit -m "Update SDE to $VERS"
           git push
