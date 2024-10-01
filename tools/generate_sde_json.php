@@ -53,5 +53,5 @@ $data = [
 ];
 
 $file = __DIR__ . '/../sde.json';
-$sde = json_encode($data) . PHP_EOL;
+$sde = json_encode($data, JSON_PRETTY_PRINT) . PHP_EOL;
 file_put_contents($file, $sde, LOCK_EX);
