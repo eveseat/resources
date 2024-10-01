@@ -19,7 +19,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-$sde_name = 'sde-20240712-TRANQUILITY';
+$sde_name = 'sde-20240920-TRANQUILITY';
 
 // Prepare the data that we want represented as JSON
 $data = [
@@ -53,5 +53,5 @@ $data = [
 ];
 
 $file = __DIR__ . '/../sde.json';
-$sde = json_encode($data) . PHP_EOL;
+$sde = json_encode($data, JSON_PRETTY_PRINT) . PHP_EOL;
 file_put_contents($file, $sde, LOCK_EX);
