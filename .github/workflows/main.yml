@@ -17,8 +17,7 @@ jobs:
 
           sed -i "s/$OLDVERS/$NEWVERS/g" ./tools/generate_sde_json.php
           sed -i "s/$OLDVERS/$NEWVERS/g" sde.json
-      - name: Commit files  # transfer the new html files back into the repository
-        run: |
+          
           git config --local user.name  ${{ github.actor }}        
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
           VERS=$(cat sde.json | grep -E -o "([0-9]{8}-TRANQUILITY)"  | uniq)
