@@ -13,6 +13,8 @@ jobs:
           OLDVERS=$(cat sde.json | grep -E -o "([0-9]{8}-TRANQUILITY)"  | uniq)
           NEWVERS=$(curl -s https://www.fuzzwork.co.uk/dump/latest/ | grep -E -o "([0-9]{8}-TRANQUILITY)"  | uniq)
 
+          echo "$OLDVERS -> $NEWVERS" 
+
           sed -i "s/$OLDVERS/$NEWVERS/g" ./tools/generate_sde_json.php
           sed -i "s/$OLDVERS/$NEWVERS/g" sde.json
       - name: Commit files  # transfer the new html files back into the repository
