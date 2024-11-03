@@ -23,7 +23,5 @@ jobs:
           VERS=$(cat sde.json | grep -E -o "([0-9]{8}-TRANQUILITY)"  | uniq)
           echo "$VERS"
           
-          git add sde.json ./tools/generate_sde_json.php
-          git status
-          git diff --exit-code || git commit -m "Update SDE to $VERS"
+          git diff --exit-code || ( git add sde.json ./tools/generate_sde_json.php && git commit -m "Update SDE to $VERS")
           git push
