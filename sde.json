@@ -1,5 +1,5 @@
 {
-    "version": "sde-20250312-TRANQUILITY",
+    "version": "sde-20250427-TRANQUILITY",
     "url": "https:\/\/www.fuzzwork.co.uk\/dump\/:version\/",
     "format": ".sql.bz2",
     "tables": [
